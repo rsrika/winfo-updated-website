@@ -1,0 +1,52 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .page-title {
+    text-align: center;
+    background-image: url('PastEventHeroImage.jpg');
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+#events {
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    width: 48%; /* Adjust for spacing */
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.event-image {
+    width: 50%;
+    background-image: url('PastEventHeroImage.jpg');
+    background-size: cover;
+    height: 100%; /* Adjust as needed */
+}
+
+.event-info {
+    width: 50%;
+    padding: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
