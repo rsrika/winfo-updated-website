@@ -21,7 +21,7 @@ header .page-title {
   #examples {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding: 10px 20px;
   }
   
@@ -59,16 +59,30 @@ header .page-title {
     cursor: pointer;
     transition: all 0.3s ease;
   }
+  .navbar-list {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 106%;
+    color: #8192D1;
+  }
+
+
   
   /* Hover effects */
   .navlink:hover {
     background-color: #8192d1ae; /* Change color on hover */
     border-radius: 10px;
   }
+  .navbar-list:hover{
+    color: #FD9193;
+    text-decoration: none;
+  }
 
 /* other stuff */
 #events {
-    width: 80%;
+    
     margin: 20px auto;
     margin-top: 60px;
 }
@@ -81,27 +95,30 @@ header .page-title {
 }
 
 .event-card {
-    width: 48%; /* Adjust for spacing */
+    
     display: flex;
-    background-color: #f2f2f2;
+    
 }
 
 .event-image {
     width: 50%;
     background-image: url('PastEventHeroImage.jpg');
     background-size: cover;
-    height: 100%; /* Adjust as needed */
+    
 }
 
 .event-info {
     width: 50%;
     padding: 10px;
+    margin-left: 20px;
+    text-align: left;
 }
 
 hr {
     border: 0;
-    height: 1px;
+    height: 2px;
     background-color: #ccc;
+    color:#000000;
     margin: 20px 0;
 }
 
@@ -109,14 +126,6 @@ hr {
     color: #AE8BCD;
 }
 
-.section-title {
-    text-align: center;
-    font-family: Figtree;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
 .spacer {
     height: 50px;
 }
@@ -143,4 +152,115 @@ hr {
     border-radius: 25px;
     padding: 15px;
 
+}
+.blue-button {
+  color: white;
+  font-weight: bold;
+  background-color: #8192D1;
+  border-radius: 25px;
+  padding: 15px;
+
+}
+
+.title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106%;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106%; 
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subsection-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106%
+}
+.event-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106%;
+}
+
+.question {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.center {
+  text-align: center;
+}
+
+.big-heading {
+  height: 300px;
+}
+.middle {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px; /* same as div height */
+}
+
+/* team page  */
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.accordion-btn {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.accordion-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  grid-gap: 20px;
+}
+
+.accordion-item {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.accordion-content.active {
+  display: block;
 }

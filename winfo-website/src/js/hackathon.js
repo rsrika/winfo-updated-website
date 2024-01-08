@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 import { NavBar } from './navbar'
 import { HackathonAbout } from './hackathon-about';
@@ -15,34 +16,43 @@ export function Hackathon(props) {
         <NavBar handleClickHome={props.handleClickHome} handleClickHackathon={props.handleClickHackathon} handleClickEvents={props.handleClickEvents} handleClickTeam={props.handleClickTeam} handleClickSupport={props.handleClickSupport}/>
         
 
-        <div className='grey-bg center'>
-            <p className='black title'>
+        <div className='grey-bg center big-heading'>
+            <p className='black title middle'>
                 WINFO Hackathon
             </p>
         </div>
 
         <div className='spacer'/>
 
-        <div className='container'>
+        <div  className='container'>
             <div className='row'>
-                <div className='col navbar-col'>
+                <div className='col col-3 navbar-col'>
                     <nav className="navbar">
-                        <ul className="navbar-list">
-                            <li><a href="#hackathon-about">About</a></li>
-                            <li><a href="#hackathon-upcoming">Upcoming Events</a></li>
-                            <li><a href="#hackathon-past">Past Events</a></li>
-                            <li><a href="#hackathon-faq">FAQs</a></li>
-                        </ul>
+                        <div className="navbar-list">
+                            <p><HashLink className='navbar-list' smooth to='/hackathon/#hackathon-about' > About </HashLink></p>
+                            <p><HashLink className='navbar-list' smooth to='/hackathon/#hackathon-upcoming' > Current Hackathon </HashLink></p>
+                            <p><HashLink className='navbar-list' smooth to='/hackathon/#hackathon-past' > Past Events </HashLink></p>
+                            <p><HashLink className='navbar-list' smooth to='/hackathon/#hackathon-faq' > FAQ </HashLink></p>
+                        </div>
                     </nav>
                 </div>
-                <div className='col content-col'>
-                    <HackathonAbout/>
+                <div className='col col-9 content-col'>
+                    <div id="hackathon-about">
+                        <HackathonAbout/>
+                    </div>
+            
                     <div className='spacer'/>
-                    <HackathonUpcoming/>
+                    <div id="hackathon-upcoming">
+                        <HackathonUpcoming/>
+                    </div>
                     <div className='spacer'/>
-                    <HackathonPast/>
+                    <div id="hackathon-past">
+                        <HackathonPast/>
+                    </div>
                     <div className='spacer'/>
-                    <HackathonFAQ/>
+                    <div id="hackathon-faq">
+                        <HackathonFAQ/>
+                    </div>
 
                 </div>
             </div>

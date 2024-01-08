@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { NavBar } from './navbar'
-
-
 export function HackathonAbout(props) {
         
     return (
     <div className='hackathon-about' >
-          <div className='purple title'>COLLABORATE. NETWORK. SOLVE.</div>
+        
         <div className='container container-left'>
-            
+            <div className='row'>
+                <p className='purple title'>COLLABORATE. NETWORK. SOLVE.</p>
+                <br/><br/>
+            </div>
             <div className='row'>
                 <div className='col'>
                     <p className='description'>
@@ -23,7 +23,7 @@ export function HackathonAbout(props) {
                     </p>
                 </div>
                 <div className='col'>
-                    <img src="" alt=""/>
+                    <img src="./img/rectangle_15" alt=""/>
                 </div>
             </div>
         </div>
