@@ -7,7 +7,7 @@ export function Home(props) {
     window.scrollTo(0, 0);
     
     return (
-    <div className='home-page' >
+    <div className='home' >
         
         <NavBar handleClickHome={props.handleClickHome} handleClickHackathon={props.handleClickHackathon} handleClickEvents={props.handleClickEvents} handleClickTeam={props.handleClickTeam} handleClickSupport={props.handleClickSupport}/>
         

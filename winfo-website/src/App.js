@@ -3,87 +3,72 @@ import { Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 import "./css/style.css";
 
-import {Home} from './js/Home.js';
-import {Journey} from './js/Journey.js';
-import {Resume} from './js/resume.js';
-import {About} from './js/About.js';
-import ProjectsView from './js/projects';
-import { IndvProjects } from './js/indvProjects';
-import { Year } from './js/reflection';
-import { QuarterlyReflection } from './js/quarterlyReflection';
+import {Home} from './js/home.js';
+import { Hackathon } from './js/hackathon.js';
+import {Team} from './js/team.js';
+import { Events } from './js/events.js';
+import {Support} from './js/support.js';
+
 
 function App(props) {
   
   let navigate = useNavigate();
   function handleClickHome() {
     console.log("handleClickHome");
-    document.querySelector(".about").classList.remove("active");
-    document.querySelector(".journey").classList.remove("active");
-    document.querySelector(".resume").classList.remove("active");
-    document.querySelector(".projects").classList.remove("active");
+    document.querySelector(".hackathon").classList.remove("active");
+    document.querySelector(".team").classList.remove("active");
+    document.querySelector(".events").classList.remove("active");
+    document.querySelector(".support").classList.remove("active");
     let element = document.querySelector(".home");
-    console.log("element from home" , element);
     element.classList.add("active");
     navigate("/");
   }
 
-  function handleClickJourney() {
-    console.log("handleClickJourney");
+  function handleClickHackathon() {
+    console.log("handleClickHackathon");
     document.querySelector(".home").classList.remove("active");
-    document.querySelector(".about").classList.remove("active");
-    document.querySelector(".resume").classList.remove("active");
-    document.querySelector(".projects").classList.remove("active");
-    let element = document.querySelector(".journey");
-    console.log("classes from Journey" , element.classList);
+    document.querySelector(".events").classList.remove("active");
+    document.querySelector(".team").classList.remove("active");
+    document.querySelector(".support").classList.remove("active");
+    let element = document.querySelector(".hackathon");
     element.classList.add("active");
-    navigate("/journey");
+    navigate("/hackathon");
   }
 
-  function handleClickResume() {
-    console.log("handleClickResume");
+  function handleClickEvents() {
+    console.log("handleClickEvents");
     document.querySelector(".home").classList.remove("active");
-    document.querySelector(".journey").classList.remove("active");
-    document.querySelector(".about").classList.remove("active");
-    document.querySelector(".projects").classList.remove("active");
-    let element = document.querySelector(".resume");
+    document.querySelector(".hackathon").classList.remove("active");
+    document.querySelector(".team").classList.remove("active");
+    document.querySelector(".support").classList.remove("active");
+    let element = document.querySelector(".events");
     element.classList.add("active");
-    navigate("/resume");
+    navigate("/events");
   }
 
-  function handleClickAbout() {
-    console.log("handleClickAbout");
+  function handleClickTeam() {
+    console.log("handleClickTeam");
     document.querySelector(".home").classList.remove("active");
-    document.querySelector(".journey").classList.remove("active");
-    document.querySelector(".resume").classList.remove("active");
-    document.querySelector(".projects").classList.remove("active");
-    let element = document.querySelector(".about");
+    document.querySelector(".hackathon").classList.remove("active");
+    document.querySelector(".events").classList.remove("active");
+    document.querySelector(".support").classList.remove("active");
+    let element = document.querySelector(".team");
     element.classList.add("active");
-    navigate("/about");
+    navigate("/team");
   }
 
-  function handleClickProjects() {
-    console.log("handleClickProjects");
+  function handleClickSupport() {
+    console.log("handleClickSupport");
     document.querySelector(".home").classList.remove("active");
-    document.querySelector(".journey").classList.remove("active");
-    document.querySelector(".resume").classList.remove("active");
-    document.querySelector(".about").classList.remove("active");
-    let element = document.querySelector(".projects");
+    document.querySelector(".hackathon").classList.remove("active");
+    document.querySelector(".events").classList.remove("active");
+    document.querySelector(".team").classList.remove("active");
+    let element = document.querySelector(".support");
     element.classList.add("active");
-    navigate("/projects");
+    navigate("/support");
   }
 
-  function handleClickYear(year) {
-    navigate("/journey/" + year);
-  }
   
-  function handleClickQuarter(year, quarter) {
-    navigate("/journey/" + year +"/" + quarter);
-  }
-
-  function handleClickIndv(project) {
-    navigate(project);
-  }
-
  
   return (
 
@@ -91,69 +76,41 @@ function App(props) {
    <div>
     <Routes>
       
-      <Route path="/journey" element={
+      <Route path="/hackathon" element={
         <>
           {/* put components here */
-            <Journey handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} handleClickYear={handleClickYear} reflectionsData={props.reflectionsData}/>
+            <Hackathon/>
           }
         </>
       } />
 
-      <Route path="/resume" element={
+      <Route path="/events" element={
         <>
           {/* put components here */
-            <Resume handleClick={handleClickJourney} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} />
+            <Events/>
           }
         </>
       } />
 
-      <Route path="/about" element={
+      <Route path="/team" element={
         <>
           {/* put components here */
-            <About handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} />
+            <Team/>
           }
         </>
       } />
-       <Route path="/projects" element={
+       <Route path="/support" element={
         <>
          {/* put components here */
-            <ProjectsView data={props.projectList} handleClickIndv={handleClickIndv} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} />
+            <Support />
          }
         </>
       } />
-
-      <Route path="/project/:projectname" element={
-        <>
-         {/* put components here */
-            <IndvProjects data={props.projectListFull} handleClickIndv={handleClickIndv} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} />
-         }
-        </>
-      } />
-
-
-      <Route path="/journey/:year" element={
-        <>
-          {/* put components here */
-            <Year data={props.yearsData} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} handleClickYear={handleClickYear} reflectionsData={props.reflectionsData}
-            handleClickQuarter={handleClickQuarter}  />
-          }
-        </>
-      } />
-
-      <Route path="/journey/:year/:quarter" element={
-        <>
-          {/* put components here */
-            <QuarterlyReflection data={props.yearsData} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} handleClickYear={handleClickYear} reflectionsData={props.reflectionsData}
-            handleClickQuarter={handleClickQuarter}  />
-          }
-        </>
-      } />
-
       <Route path="/*" element={
         <>
           {/* put components here */
            
-              <Home handleClick={handleClickJourney} handleClickHome={handleClickHome} handleClickJourney={handleClickJourney} handleClickAbout={handleClickAbout} handleClickResume={handleClickResume} handleClickProjects={handleClickProjects} />
+              <Home handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport} />
            
           }
         </>
