@@ -4,7 +4,7 @@ export function NavBar(props) {
 
     let navImg = () => {
         
-        return (<img id="nav-img" src="/img/general/roshni-pink.png" alt="winfo logo" onClick={() => { props.handleClickHome()}}></img>);
+        return (<img id="nav-img" src="/img/winfo-logo.png" alt="winfo logo" onClick={() => { props.handleClickHome()}}></img>);
     }
 
     

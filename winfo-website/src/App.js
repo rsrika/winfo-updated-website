@@ -79,7 +79,7 @@ function App(props) {
       <Route path="/hackathon" element={
         <>
           {/* put components here */
-            <Hackathon/>
+            <Hackathon handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport} />
           }
         </>
       } />
@@ -87,7 +87,7 @@ function App(props) {
       <Route path="/events" element={
         <>
           {/* put components here */
-            <Events/>
+            <Events handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport} />
           }
         </>
       } />
@@ -95,14 +95,14 @@ function App(props) {
       <Route path="/team" element={
         <>
           {/* put components here */
-            <Team/>
+            <Team handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport} />
           }
         </>
       } />
        <Route path="/support" element={
         <>
          {/* put components here */
-            <Support />
+            <Support handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport}  />
          }
         </>
       } />

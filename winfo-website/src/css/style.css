@@ -1,0 +1,146 @@
+
+#root {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+body {
+    font-family: 'Figtree', sans-serif;
+}
+
+header .page-title {
+    text-align: center;
+    background-image: url('PastEventHeroImage.jpg');
+    background-size: cover;
+    color: white;
+    padding: 50px 0;
+}
+
+/* nav bar  */
+ 
+  #examples {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 20px;
+  }
+  
+  .nav-sig {
+    display: flex;
+    align-items: center;
+  }
+  
+  .signature {
+    margin-right: 20px;
+  }
+  
+  #nav-img {
+    width: 100px; /* Adjust size as needed */
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  
+  .links ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .links ul li {
+    margin-right: 20px;
+  }
+  
+  .navlink {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: #000000; /* Change color as needed */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .navlink:hover {
+    background-color: #8192d1ae; /* Change color on hover */
+    border-radius: 10px;
+  }
+
+/* other stuff */
+#events {
+    width: 80%;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    width: 48%; /* Adjust for spacing */
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+.event-image {
+    width: 50%;
+    background-image: url('PastEventHeroImage.jpg');
+    background-size: cover;
+    height: 100%; /* Adjust as needed */
+}
+
+.event-info {
+    width: 50%;
+    padding: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+.purple {
+    color: #AE8BCD;
+}
+
+.section-title {
+    text-align: center;
+    font-family: Figtree;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.spacer {
+    height: 50px;
+}
+
+.grey-bg {
+    background-color: #D9D9D9;
+}
+
+.purple-bg {
+    background-color: #D1B4E9;
+}
+
+.banner-image {
+    background: url(../banner-image.png), lightgray 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+.white-button {
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+
+}
