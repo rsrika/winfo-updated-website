@@ -125,6 +125,9 @@ hr {
 .purple {
     color: #AE8BCD;
 }
+.pink {
+  color: #FD9193;
+}
 
 .spacer {
     height: 50px;
@@ -263,4 +266,23 @@ hr {
 
 .accordion-content.active {
   display: block;
+}
+
+.lightgrey-bg {
+  background-color: lightgray;
+}
+
+.past-sponsors {
+  background: url("../past_sponsors.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+ 
+}
+.sponsorship-tiers {
+  background: url("../Sponsorship\ Packages.png"), lightgray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
 }
