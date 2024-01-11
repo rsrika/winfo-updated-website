@@ -12,7 +12,7 @@ export function Team(props) {
 
     window.scrollTo(0, 0);
     
-    const years = ["2022-2023","2021-2022","2020-2021","2019-2020", "2018-2019", "2017-2018", "2016-2017"]
+    const years = ["2023-2024","2022-2023","2021-2022","2020-2021","2019-2020", "2018-2019", "2017-2018", "2016-2017"]
 
     const teamMembers = [
         { year: "2023-2024", name: 'Roshni Srikanth', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2023_Officers/Roshni.jpg' },
@@ -45,15 +45,15 @@ export function Team(props) {
         { year: "2021-2022", name: 'Gisele Fox', position: 'Director of Community Efforts', imageUrl: 'public/img/Officers/Officers/2021_Officers/Gisele.jpg' },
         { year: "2021-2022", name: 'Sharon Lin', position: 'Hackathon Director', imageUrl: 'public/img/Officers/Officers/2021_Officers/Sharon.jpeg' },
 
-        { year: "2020-2021", name: 'Officer Name Here', position: 'Co-President', imageUrl: '...' },
-        { year: "2020-2021", name: 'Officer Name Here', position: 'Co-President', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Director of Finance', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Director of Outreach', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Creative Director', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Director of Public Relations', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Director of Diversity Efforts', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Director of Community Efforts', imageUrl: '...' },
-        { year: "2019-2020", name: 'Officer Name Here', position: 'Hackathon Director', imageUrl: '...' },
+        { year: "2020-2021", name: 'Allison Geary', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2020_Officers/Allison.jpg' },
+        { year: "2020-2021", name: 'Akoly Vongdala', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2020_Officers/Akoly.jpg' },
+        { year: "2019-2020", name: 'Lynzley Kolakowski', position: 'Director of Finance', imageUrl: 'public/img/Officers/Officers/2020_Officers/Lynzley.jpg' },
+        { year: "2019-2020", name: 'Julia Shull', position: 'Director of Outreach', imageUrl: 'public/img/Officers/Officers/2020_Officers/Julia.jpg' },
+        { year: "2019-2020", name: 'Kayla Chea', position: 'Creative Director', imageUrl: 'public/img/Officers/Officers/2020_Officers/Kayla.jpg' },
+        { year: "2019-2020", name: 'Shareen Chang', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2020_Officers/Shareen.jpg' },
+        { year: "2019-2020", name: 'Harkiran Saluja', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2020_Officers/Harkiran.jpg' },
+        { year: "2019-2020", name: 'Rachel Kinkley', position: 'Director of Community Efforts', imageUrl: 'public/img/Officers/Officers/2020_Officers/Rachel.jpg' },
+        { year: "2019-2020", name: 'Locksley Kolakowski', position: 'Hackathon Director', imageUrl: 'public/img/Officers/Officers/2020_Officers/Locksley.jpg' },
 
         { year: "2018-2019", name: 'Officer Name Here', position: 'Co-President', imageUrl: '...' },
         { year: "2018-2019", name: 'Officer Name Here', position: 'Co-President', imageUrl: '...' },
