@@ -72,28 +72,21 @@ export function Team(props) {
         { year: "2018-2019", name: 'Mary Huibregtse', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2018_Officers/mary-huibregtse.jpg' },
         { year: "2018-2019", name: 'Harshita Akkaraju', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2018_Officers/harshita-akkaraju.jpg' },
         
-        { year: "2017-2018", name: 'Officer Name Here', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2017-2017", name: 'Officer Name Here', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2017-2017", name: 'Officer Name Here', position: 'Director of Finance', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2017-2017", name: 'Officer Name Here', position: 'Director of Outreach', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2017-2017", name: 'Officer Name Here', position: 'Creative Director', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2017-2017", name: 'Officer Name Here', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Community Efforts', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Hackathon Director', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
+        { year: "2017-2018", name: 'Tiffany Chen', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/tiffany-chen.jpg' },
+        { year: "2017-2018", name: 'Joycie Yu', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/joycie-vu.jpg' },
+        { year: "2017-2018", name: 'Zhanna Voloshina', position: 'Director of Finance', imageUrl: 'public/img/Officers/Officers/2017_Officers/zhanna-voloshina.jpg' },
+        { year: "2017-2018", name: 'Jenny Lee', position: 'Director of Outreach', imageUrl: 'public/img/Officers/Officers/2017_Officers/jenny-lee.jpg' },
+        { year: "2017-2018", name: 'Leanne Hwa', position: 'Creative Director', imageUrl: 'public/img/Officers/Officers/2017_Officers/leanne-hwa.jpg' },
+        { year: "2017-2018", name: 'Andrea Chen', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2017_Officers/andrea-chen.jpg' },
+        { year: "2017-2018", name: 'Anushree Shukla', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2017_Officers/anushree-shukla.jpg' },
 
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Co-President', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Finance', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Outreach', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Creative Director', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Director of Community Efforts', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-        { year: "2016-2017", name: 'Officer Name Here', position: 'Hackathon Director', imageUrl: 'public/img/Officers/Officers/2017_Officers/' },
-
-
-        // Add team member data for each year
+        { year: "2016-2017", name: 'Brittney Hoy', position: 'President', imageUrl: 'public/img/Officers/Officers/2016_Officers/brittney-hoy.JPG' },
+        { year: "2016-2017", name: 'Sanjana Galgalikar', position: 'Vice-President', imageUrl: 'public/img/Officers/Officers/2016_Officers/sanjana-galgalikar.jpg' },
+        { year: "2016-2017", name: 'Fan Yang', position: 'Director of Finance', imageUrl: 'public/img/Officers/Officers/2016_Officers/fan-yang.JPG' },
+        { year: "2016-2017", name: 'Isabella Spaletta', position: 'Director of Outreach', imageUrl: 'public/img/Officers/Officers/2016_Officers/isabella-spaletta.JPG' },
+        { year: "2016-2017", name: 'Sophie Song', position: 'Creative Director', imageUrl: 'public/img/Officers/Officers/2016_Officers/sophie-song.jpg' },
+        { year: "2016-2017", name: 'Adriana Vining', position: 'Director of Public Relations', imageUrl: 'public/img/Officers/Officers/2016_Officers/adriana-vining.jpg' },
+        { year: "2016-2017", name: 'Jessie Zhang', position: 'Director of Diversity Efforts', imageUrl: 'public/img/Officers/Officers/2016_Officers/jessie-zhang.jpg' },
     ];
 
    const renderAccordion = () => {
