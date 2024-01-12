@@ -92,7 +92,7 @@ export function Team(props) {
    const renderAccordion = () => {
     return years.map((year) => (
       <div key={year} className="accordion">
-        <button className="accordion-btn section-title" onClick={() => {console.log("making ", {year}," active"); toggleAccordion(year)}}>
+        <button className="accordion-btn" onClick={() => {console.log("making ", {year}," active"); toggleAccordion(year)}}>
           {year} Officer Team
         </button>
         {activeYear === year && (
@@ -115,14 +115,11 @@ export function Team(props) {
     return (
     <div className='team' >
         <NavBar handleClickHome={props.handleClickHome} handleClickHackathon={props.handleClickHackathon} handleClickEvents={props.handleClickEvents} handleClickTeam={props.handleClickTeam} handleClickSupport={props.handleClickSupport}/>
-        <div className='grey-bg center big-heading'>
-            <p className='black title middle'>
-               Our Officer Team
-            </p>
-        </div> 
-        <div className='spacer'/>
+        <div id="team-banner" className="banner center">
+          <h1>Our Officer Team</h1>
+        </div>
         
-        <div className="accordion-container">
+        <div className="accordion-container container">
             {
                 renderAccordion()
             }

@@ -1,9 +1,9 @@
-
 #root {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  margin-bottom: 100px;
 }
+
 body {
     font-family: 'Figtree', sans-serif;
 }
@@ -17,106 +17,177 @@ header .page-title {
 }
 
 /* nav bar  */
- 
-  #examples {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px 20px;
-  }
-  
-  .nav-sig {
-    display: flex;
-    align-items: center;
-  }
-  
-  .signature {
-    margin-right: 20px;
-  }
-  
-  #nav-img {
-    width: 100px; /* Adjust size as needed */
-    cursor: pointer;
-    padding-bottom: 30px;
-    padding-top: 10px;
-  }
-  
-  .links ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .links ul li {
-    margin-right: 20px;
-  }
-  
-  .navlink {
-    padding: 10px 20px;
-    border: none;
-    background-color: transparent;
-    color: #000000; /* Change color as needed */
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  .navbar-list {
-    text-decoration: none;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 106%;
-    color: #8192D1;
-  }
+#navbar-container {
+  display: flex;
+  justify-content: center;
+}
 
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  width: 80%;
+}
 
-  
-  /* Hover effects */
-  .navlink:hover {
-    background-color: #8192d1ae; /* Change color on hover */
-    border-radius: 10px;
-  }
-  .navbar-list:hover{
-    color: #FD9193;
-    text-decoration: none;
-  }
+.navbar {
+  padding: 0;
+}
+
+#winfo-logo {
+  width: 100px; /* Adjust size as needed */
+  cursor: pointer;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.navlink {
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-list {
+  color: #8192D1;
+  transition: all 0.3s ease;
+}
+
+#support-us {
+  background-color: #8192D1;
+  border-radius: 1000px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* home page  */
+#informatics img, #mission img {
+  width: 100%;
+}
+
+#about-us {
+  background-color: #fffefa;
+}
+
+#home p {
+  font-size: 20px;
+}
+
+#about-us, #informatics, #mission, #history {
+  padding: 100px 0;
+}
+
+#informatics, #mission {
+  gap: 100px;
+}
+
+#informatics {
+  background-image: linear-gradient(#fffefa, #fff0f1);
+}
+
+#mission {
+  background-color: #fffefa;
+  /* background-image: linear-gradient(#fffefa, #fffefa); */
+}
+
+#history {
+  /* background-color: #d6e6ff; */
+  background-image: linear-gradient(#fffefa, #e9f1ff);
+}
+
+#history img {
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+#informatics .description, #mission .description {
+  display: flex;
+  align-items: center;
+}
+
+#informatics .description {
+  margin-right: 100px;
+}
+
+#mission .description {
+  margin-left: 100px;
+}
+
+/* Hover effects */
+.navlink:hover {
+  color: #FD9193;
+}
+
+.navbar-list:hover{
+  color: #FD9193;
+  text-decoration: none;
+}
+
+#support-us:hover {
+  background-color: #FD9193;
+}
 
 /* other stuff */
+.banner {
+  margin-bottom: 50px;
+}
+
+.col {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 0;
+}
+
 #events {
-    
-    margin: 20px auto;
-    margin-top: 60px;
+  margin-top: 60px;
+  padding: 0;
 }
 
 .event-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 25px;
 }
 
 .event-card {
-    
-    display: flex;
-    
+  border: 1px #cbcbcb solid;
+  height: 100%;
+  border-radius: 5px;
 }
 
-.event-image {
-    width: 50%;
-    background-image: url('PastEventHeroImage.jpg');
-    background-size: cover;
-    
+.event-card img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.event-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .event-info {
-    width: 50%;
-    padding: 10px;
-    margin-left: 20px;
-    text-align: left;
+  padding: 0 20px;
+  margin-bottom: 30px;
 }
 
 hr {
     border: 0;
-    height: 2px;
+    height: 1px;
     background-color: #ccc;
     color:#000000;
     margin: 20px 0;
@@ -125,44 +196,91 @@ hr {
 .purple {
     color: #AE8BCD;
 }
+
+.dark-purple {
+  color: #7d46ad;
+}
+
+
 .pink {
   color: #FD9193;
 }
 
+.blue {
+  color: #8192D1;
+}
+
 .spacer {
-    height: 50px;
+    height: 100px;
 }
 
 .grey-bg {
     background-color: #D9D9D9;
 }
 
-.purple-bg {
-    background-color: #D1B4E9;
+.banner {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner-image {
-    background: url(../banner-image.png), lightgray 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
+.banner h1 {
+  color: white;
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+#uw-banner {
+  width: 400px;
+}
+
+#title-banner {
+  background: url('home-banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin-bottom: 0px;
+}
+
+#hackathon-banner {
+  background: url('hackathon-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#events-banner {
+  background: url('event-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#team-banner {
+  background: url('officer-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+figcaption {
+  color: #717171;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px;
 }
 
 .white-button {
     color: #000000;
-    font-weight: bold;
     background-color: white;
-    border-radius: 25px;
-    padding: 15px;
-
 }
-.blue-button {
-  color: white;
-  font-weight: bold;
-  background-color: #8192D1;
-  border-radius: 25px;
-  padding: 15px;
 
+.purple-button {
+  color: white;
+  background-color: #AE8BCD;
 }
 
 .title {
@@ -180,11 +298,11 @@ hr {
 }
 
 .section-title {
-  text-align: center;
-  font-size: 36px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .subsection-title {
@@ -193,25 +311,26 @@ hr {
   font-weight: 600;
   line-height: 106%
 }
-.event-title {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 106%;
-}
 
 .question {
   font-weight: bold;
-  font-size: larger;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .center {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.big-heading {
-  height: 300px;
+.center p {
+    max-width: 950px;
+    margin: 0px 50px;
+    text-align: center;
 }
+
 .middle {
   text-align: center;
   vertical-align: middle;
@@ -232,14 +351,14 @@ hr {
 
 .accordion-btn {
   background-color: #eee;
+  font-weight: 600;
   color: #333;
-  border: none;
-  outline: none;
   padding: 10px;
   width: 100%;
   text-align: left;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 0px;
 }
 
 .accordion-content {
@@ -285,4 +404,13 @@ hr {
   background-position: center;
   background-size: cover;
   
+}
+
+/* hackathon page  */
+#hackathon-faq .row, #hackathon-about .row {
+  gap: 50px;
+}
+
+#hackathon-upcoming img, #hackathon-past img{
+  max-width: 300px;
 }
