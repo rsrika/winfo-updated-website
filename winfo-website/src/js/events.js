@@ -33,7 +33,7 @@ export function Events(props) {
           <div className="event-card">
             <img src="/img/fearless.png" alt="Fearless graphic"/>
             <div className="event-info">
-              <p className='purple event-title'>Fearless</p>
+              <p className='purple event-title'>Fearless, Tech More</p>
               <p>
               FearLess is a one-week online beginner-friendly hackathon for middle and high school students from all backgrounds
               to gain experience in technology. Engagement is a series of tasks that provide a fun, comprehensive experience with
@@ -67,9 +67,9 @@ export function Events(props) {
             <div className="event-info">
               <p className='purple event-title'>Table Talks</p>
               <p>
-              We welcome WINFO alumni and industry professionals with different backgrounds to participate in a panel discussion,
+              We welcome WINFO alumni and industry professionals to participate in a panel,
               discussing their experiences in various tech roles such as software engineering, program management, UX design, and
-              cybersecurity. The panel aims to provide valuable insights into the diverse aspects of working in the technology industry.
+              cybersecurity. The panels aim to provide valuable insights into the diverse aspects of working in the technology industry.
               </p>
             </div>
           </div>

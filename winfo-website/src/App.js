@@ -67,11 +67,8 @@ function App(props) {
     element.classList.add("active");
     navigate("/support");
   }
-
-  
  
   return (
-
     // rendering the app
    <div>
     <Routes>
@@ -109,9 +106,7 @@ function App(props) {
       <Route path="/*" element={
         <>
           {/* put components here */
-           
               <Home handleClickHome={handleClickHome} handleClickHackathon={handleClickHackathon} handleClickEvents={handleClickEvents} handleClickTeam={handleClickTeam} handleClickSupport={handleClickSupport} />
-           
           }
         </>
       } />

@@ -11,7 +11,7 @@ import { HackathonPast } from './hackathon-past';
 export function Hackathon(props) {
         
   return (
-    <div className='hackathon'>
+    <div id='hackathon'>
       
       <NavBar handleClickHome={props.handleClickHome} handleClickHackathon={props.handleClickHackathon} handleClickEvents={props.handleClickEvents} handleClickTeam={props.handleClickTeam} handleClickSupport={props.handleClickSupport}/>
 

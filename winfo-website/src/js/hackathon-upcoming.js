@@ -5,7 +5,7 @@ export function HackathonUpcoming(props) {
   return (
     <div id='hackathon-upcoming' >
       <h2 className=''>Upcoming Hackathon</h2>
-      <h3 className='purple title'>WINFO's 12th Annual Hackathon: Infinite Possibilities, Infinite Solutions</h3>
+      <h3 className='purple title'>WINFO's 12th Annual Hackathon: Infinite Possibilities, Infinite Solutions (2024)</h3>
       <div className='container container-left'>
         <div className='row'>
           <div className='col'>
@@ -15,9 +15,9 @@ export function HackathonUpcoming(props) {
             challenges. Join us in our pursuit of limitless solutions and a future where possibilities are infinite.
             </p>
             <br/>
-            <div className='purple subsection-title'>Registration is full!</div>
+            <p className='pink subsection-title'>Registration is full!</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV94-u_acqmx62C7obeCN5AUTwGrCAXLdtDC65hHWfZxd7JQ/viewform">Join our Waitlist</a>
-            <div className='purple subsection-title'>Hackathon Schedule</div>
+            <p className='pink subsection-title'>Hackathon Schedule</p>
             <a href="https://miapham2520.github.io/winfo-hackathon-24/#/">Hackathon Website</a>
           </div>
           <div className='col'>

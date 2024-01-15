@@ -42,7 +42,7 @@ export function Home(props) {
               the term was not widely used in the U.S. The name was chosen because it spoke to the opportunities that are available
               to students with the strong technical background needed to develop solutions to the world’s information challenges.
             </p>
-            <button className='purple-button' href="https://ischool.uw.edu/">Visit the iSchool Website</button>
+            <a className='home-link' href="https://ischool.uw.edu/">Visit the iSchool Website</a>
           </div>
         </div>
       </div>
@@ -69,9 +69,9 @@ export function Home(props) {
       <div id='history' className='center'>
         <h2 className='blue section-title'>Our History</h2>
         <p className='text-description'>
-          Women in Informatics (WINFO) was founded in 2012 by a group of women in the University of Washington Informatics program whose
-          goal was to <span className='blue'>attract and inspire female students in the tech industry to connect with each other and lead others to achieve.</span>
-          Through events such as company visits, social meetings, hackathons and more, we continue to carry out this mission in our operations.
+          WINFO was founded in 2012 by a group of women in the University of Washington Informatics program whose
+          goal was to <span className='blue'>attract and inspire female students in the tech industry to connect with each other and lead others
+          to achieve.</span> Through events such as company visits, social meetings, hackathons, and more, we continue to carry out this mission in our operations.
           <br></br><br></br>
           One goal of the Informatics program was to increase their female applicants. In 2012, the Informatics program admitted
           only 140 students, 28% of which were female. Now, the Informatics program accepts more than 200 students per year, 40%
