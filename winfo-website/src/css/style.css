@@ -375,13 +375,7 @@ button {
   min-height: 100vh;
  
 }
-.sponsorship-tiers {
-  background: url("../Sponsorship\ Packages.png"), lightgray;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  
-}
+
 
 /* hackathon page  */
 #hackathon-faq .row, #hackathon-about .row {

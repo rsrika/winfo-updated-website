@@ -28,6 +28,8 @@ export function Home(props) {
         </p>
       </div>
 
+
+      <div className='container'>
       <div id="informatics" className='row'>
         <div className='col'>
           <img id="gracehopper" src="img/gracehopper.jpeg" alt="Grace Hopper 2019"/>
@@ -65,6 +67,10 @@ export function Home(props) {
           <figcaption>WINFO's 8th Annual Hackathon</figcaption>
         </div>
       </div>
+
+      </div>
+
+     
 
       <div id='history' className='center'>
         <h2 className='blue section-title'>Our History</h2>
